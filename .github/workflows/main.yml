@@ -27,7 +27,7 @@ jobs:
 
       # Set up Environment
       - name: Set up Python 3.9
-        uses: action/setup-python@v2
+        uses: actions/setup-python@v2
         with:
           python-version: 3.9.8
       
