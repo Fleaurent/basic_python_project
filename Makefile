@@ -7,6 +7,7 @@ install:
 
 lint:
 	pylint --disable=R,C hello.py
+	docker run --rm -i hadolint/hadolint < Dockerfile
 
 test:
 	python -m pytest -vv --cov=hello test_hello.py
